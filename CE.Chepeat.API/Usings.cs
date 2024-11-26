@@ -1,0 +1,10 @@
+﻿global using CE.Chepeat.API.Swagger.Filters;
+global using CE.Chepeat.Application;
+global using CE.Chepeat.Infraestructure;
+global using Microsoft.OpenApi.Models;
+global using CE.Chepeat.Application.Interfaces.Controllers;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.AspNetCore.Mvc.Filters;
+global using System.Net.Mime;
+global using CE.Chepeat.Domain.Aggregates.Persona;
+global using CE.Chepeat.Domain.Aggregates.User;

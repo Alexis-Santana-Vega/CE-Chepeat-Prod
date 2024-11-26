@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="Aggregates\Image\**" />
+	  <Compile Remove="Constants\**" />
+	  <Compile Remove="DTOs\User\**" />
+	  <Compile Remove="Enums\**" />
+	  <Compile Remove="Updated\**" />
+	  <EmbeddedResource Remove="Aggregates\Image\**" />
+	  <EmbeddedResource Remove="Constants\**" />
+	  <EmbeddedResource Remove="DTOs\User\**" />
+	  <EmbeddedResource Remove="Enums\**" />
+	  <EmbeddedResource Remove="Updated\**" />
+	  <None Remove="Aggregates\Image\**" />
+	  <None Remove="Constants\**" />
+	  <None Remove="DTOs\User\**" />
+	  <None Remove="Enums\**" />
+	  <None Remove="Updated\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+		<PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.8" />
+		<PackageReference Include="NetTopologySuite" Version="2.5.0" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<Folder Include="DTOs\Auth\" />
+	</ItemGroup>
+
+</Project>
